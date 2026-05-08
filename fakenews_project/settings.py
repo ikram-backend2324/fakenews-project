@@ -92,7 +92,23 @@ LOCALE_PATHS = [BASE_DIR / 'locale']
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_DIRS = [BASE_DIR / 'static']
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
+
+# WhiteNoise — skip source-map files so collectstatic never chokes on missing .map refs
+WHITENOISE_SKIP_COMPRESS_EXTENSIONS = [
+    'jpg', 'jpeg', 'png', 'gif', 'webp', 'zip', 'gz', 'tgz', 'bz2', 'tbz',
+    'xz', 'br', 'swf', 'flv', 'woff', 'woff2', 'map',
+]
+WHITENOISE_MANIFEST_STRICT = False
+
+STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+]
+
+# Ignore Jazzmin's re-bundled copies of Django admin JS to prevent
+# "duplicate destination path" warnings during collectstatic
+JAZZMIN_IGNORE_STATIC = ['admin/js/cancel.js', 'admin/js/popup_response.js']
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
