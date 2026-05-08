@@ -1,0 +1,396 @@
+# Russian translations for FakeNews AI
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+
+msgid "FakeNews AI Detector"
+msgstr "Детектор фейковых новостей AI"
+
+msgid "FakeNews AI — Detect Misinformation with AI"
+msgstr "FakeNews AI — Обнаружение дезинформации с помощью ИИ"
+
+msgid "AI-powered fake news detection system"
+msgstr "Система обнаружения фейков на основе ИИ"
+
+msgid "FakeNews AI"
+msgstr "FakeNews AI"
+
+msgid "Home"
+msgstr "Главная"
+
+msgid "Analyze"
+msgstr "Анализ"
+
+msgid "History"
+msgstr "История"
+
+msgid "About"
+msgstr "О нас"
+
+msgid "Profile"
+msgstr "Профиль"
+
+msgid "Admin"
+msgstr "Админ"
+
+msgid "Logout"
+msgstr "Выход"
+
+msgid "Login"
+msgstr "Войти"
+
+msgid "Sign Up"
+msgstr "Регистрация"
+
+msgid "English"
+msgstr "Английский"
+
+msgid "Russian"
+msgstr "Русский"
+
+msgid "Uzbek"
+msgstr "Узбекский"
+
+msgid "Detect"
+msgstr "Определяй"
+
+msgid "Fake News"
+msgstr "Фейковые новости"
+
+msgid "with"
+msgstr "с помощью"
+
+msgid "Artificial Intelligence"
+msgstr "Искусственного интеллекта"
+
+msgid "DeepSeek AI"
+msgstr "DeepSeek AI"
+
+msgid "Instant Analysis"
+msgstr "Мгновенного анализа"
+
+msgid "Our AI analyzes news articles in seconds, detecting misinformation, evaluating credibility, and providing detailed reasoning — in English, Russian, and Uzbek."
+msgstr "Наш ИИ анализирует новостные статьи за секунды, обнаруживая дезинформацию, оценивая достоверность и предоставляя подробные обоснования — на английском, русском и узбекском языках."
+
+msgid "Analyze News"
+msgstr "Анализировать новость"
+
+msgid "My History"
+msgstr "Моя история"
+
+msgid "Get Started Free"
+msgstr "Начать бесплатно"
+
+msgid "Fake News Detected"
+msgstr "Фейк обнаружен"
+
+msgid "Confidence: 98%"
+msgstr "Достоверность: 98%"
+
+msgid "Scientists shocked by discovery..."
+msgstr "Учёные шокированы открытием..."
+
+msgid "Confidence"
+msgstr "Уверенность"
+
+msgid "Total Analyses"
+msgstr "Всего анализов"
+
+msgid "Fake Detected"
+msgstr "Обнаружено фейков"
+
+msgid "Real News"
+msgstr "Настоящие новости"
+
+msgid "Languages"
+msgstr "Языки"
+
+msgid "Your Statistics"
+msgstr "Ваша статистика"
+
+msgid "Your personal news analysis overview"
+msgstr "Обзор вашего личного анализа новостей"
+
+msgid "Analyses"
+msgstr "Анализы"
+
+msgid "Fake"
+msgstr "Фейк"
+
+msgid "Real"
+msgstr "Правда"
+
+msgid "Uncertain"
+msgstr "Неопределённо"
+
+msgid "How It Works"
+msgstr "Как это работает"
+
+msgid "Advanced AI technology to fight misinformation"
+msgstr "Передовые технологии ИИ для борьбы с дезинформацией"
+
+msgid "1. Paste the News"
+msgstr "1. Вставьте новость"
+
+msgid "Copy any news article, social media post, or suspicious text and paste it into our analyzer."
+msgstr "Скопируйте любую новостную статью, публикацию в соцсетях или подозрительный текст и вставьте в наш анализатор."
+
+msgid "2. AI Analysis"
+msgstr "2. Анализ ИИ"
+
+msgid "Our DeepSeek AI model analyzes language patterns, logical consistency, and known misinformation signals."
+msgstr "Наша модель DeepSeek AI анализирует языковые паттерны, логическую согласованность и известные признаки дезинформации."
+
+msgid "3. Get Results"
+msgstr "3. Получите результаты"
+
+msgid "Receive a clear verdict (Real / Fake / Uncertain) with a confidence score and detailed reasoning."
+msgstr "Получите чёткий вердикт (Правда / Фейк / Неопределённо) с оценкой уверенности и подробным обоснованием."
+
+msgid "Ready to Fight Misinformation?"
+msgstr "Готовы бороться с дезинформацией?"
+
+msgid "Create a free account and start detecting fake news with the power of AI."
+msgstr "Создайте бесплатный аккаунт и начните обнаруживать фейковые новости с помощью ИИ."
+
+msgid "Start For Free"
+msgstr "Начать бесплатно"
+
+msgid "About FakeNews AI"
+msgstr "О FakeNews AI"
+
+msgid "An AI-powered system designed to help people identify misinformation and fake news in the digital age."
+msgstr "Система на основе ИИ, разработанная для помощи людям в выявлении дезинформации и фейковых новостей в цифровую эпоху."
+
+msgid "Our Mission"
+msgstr "Наша миссия"
+
+msgid "We believe accurate information is the foundation of a healthy society. Our mission is to make AI-powered fact-checking accessible to everyone, helping people make informed decisions about the news they consume and share."
+msgstr "Мы верим, что достоверная информация является основой здорового общества. Наша миссия — сделать проверку фактов на основе ИИ доступной для всех."
+
+msgid "Technology"
+msgstr "Технология"
+
+msgid "Built on DeepSeek AI via OpenRouter, our system analyzes linguistic patterns, logical consistency, emotional manipulation tactics, and structural markers commonly found in fake news to provide accurate verdicts."
+msgstr "Построенная на DeepSeek AI через OpenRouter, наша система анализирует лингвистические паттерны, логическую согласованность и тактики эмоциональных манипуляций."
+
+msgid "3 Languages"
+msgstr "3 языка"
+
+msgid "English, Russian, and Uzbek support for wider accessibility."
+msgstr "Поддержка английского, русского и узбекского языков."
+
+msgid "Fast Analysis"
+msgstr "Быстрый анализ"
+
+msgid "Results in seconds using state-of-the-art language models."
+msgstr "Результаты за секунды с использованием передовых языковых моделей."
+
+msgid "Analysis History"
+msgstr "История анализов"
+
+msgid "All your analyses are saved for future reference."
+msgstr "Все ваши анализы сохраняются для дальнейшего использования."
+
+msgid "Disclaimer"
+msgstr "Отказ от ответственности"
+
+msgid "FakeNews AI is a tool to assist in evaluating news content. AI analysis should be used as a starting point for critical thinking, not as a definitive fact-checker. Always verify information through multiple credible sources."
+msgstr "FakeNews AI — это инструмент для оценки новостного контента. Анализ ИИ следует использовать как отправную точку для критического мышления. Всегда проверяйте информацию через несколько достоверных источников."
+
+msgid "Welcome Back"
+msgstr "Добро пожаловать"
+
+msgid "Sign in to your account to continue"
+msgstr "Войдите в свой аккаунт, чтобы продолжить"
+
+msgid "Sign In"
+msgstr "Войти"
+
+msgid "Don't have an account?"
+msgstr "Нет аккаунта?"
+
+msgid "Create Account"
+msgstr "Создать аккаунт"
+
+msgid "Start detecting fake news for free"
+msgstr "Начните обнаруживать фейковые новости бесплатно"
+
+msgid "Already have an account?"
+msgstr "Уже есть аккаунт?"
+
+msgid "Username"
+msgstr "Имя пользователя"
+
+msgid "Email address"
+msgstr "Email адрес"
+
+msgid "First name"
+msgstr "Имя"
+
+msgid "Password"
+msgstr "Пароль"
+
+msgid "Confirm password"
+msgstr "Подтвердите пароль"
+
+msgid "Account created successfully! Welcome aboard."
+msgstr "Аккаунт успешно создан! Добро пожаловать."
+
+msgid "Please correct the errors below."
+msgstr "Пожалуйста, исправьте ошибки ниже."
+
+msgid "Invalid username or password."
+msgstr "Неверное имя пользователя или пароль."
+
+msgid "You have been logged out."
+msgstr "Вы вышли из системы."
+
+msgid "AI Analysis"
+msgstr "Анализ ИИ"
+
+msgid "Analyze News Article"
+msgstr "Анализировать новостную статью"
+
+msgid "Paste any news text below and our AI will evaluate its credibility"
+msgstr "Вставьте любой текст новости ниже, и наш ИИ оценит её достоверность"
+
+msgid "Analyzing content..."
+msgstr "Анализирую контент..."
+
+msgid "Checking for patterns..."
+msgstr "Проверяю паттерны..."
+
+msgid "Consulting AI..."
+msgstr "Консультируюсь с ИИ..."
+
+msgid "Evaluating credibility..."
+msgstr "Оцениваю достоверность..."
+
+msgid "Generating verdict..."
+msgstr "Генерирую вердикт..."
+
+msgid "AI is scanning for misinformation signals"
+msgstr "ИИ сканирует сигналы дезинформации"
+
+msgid "Paste the news article or text here to analyze..."
+msgstr "Вставьте новостную статью или текст здесь для анализа..."
+
+msgid "Min 30 characters, max 5000"
+msgstr "Минимум 30 символов, максимум 5000"
+
+msgid "VERDICT"
+msgstr "ВЕРДИКТ"
+
+msgid "FAKE NEWS"
+msgstr "ФЕЙКОВЫЕ НОВОСТИ"
+
+msgid "REAL NEWS"
+msgstr "НАСТОЯЩИЕ НОВОСТИ"
+
+msgid "UNCERTAIN"
+msgstr "НЕОПРЕДЕЛЁННО"
+
+msgid "AI Reasoning"
+msgstr "Обоснование ИИ"
+
+msgid "Full Report"
+msgstr "Полный отчёт"
+
+msgid "New Analysis"
+msgstr "Новый анализ"
+
+msgid "Recent"
+msgstr "Последние"
+
+msgid "View full history"
+msgstr "Посмотреть всю историю"
+
+msgid "total analyses"
+msgstr "всего анализов"
+
+msgid "All"
+msgstr "Все"
+
+msgid "No analyses yet"
+msgstr "Анализов пока нет"
+
+msgid "Start by analyzing your first news article."
+msgstr "Начните с анализа вашей первой новости."
+
+msgid "Analyze Now"
+msgstr "Анализировать"
+
+msgid "You haven't analyzed any news yet. Start by analyzing your first article."
+msgstr "Вы ещё не анализировали новости. Начните с первой статьи."
+
+msgid "Analysis Report"
+msgstr "Отчёт об анализе"
+
+msgid "Back to History"
+msgstr "Назад к истории"
+
+msgid "Analysis Details"
+msgstr "Детали анализа"
+
+msgid "Date"
+msgstr "Дата"
+
+msgid "Language"
+msgstr "Язык"
+
+msgid "Text Length"
+msgstr "Длина текста"
+
+msgid "chars"
+msgstr "символов"
+
+msgid "Processing Time"
+msgstr "Время обработки"
+
+msgid "Analyzed Text"
+msgstr "Анализируемый текст"
+
+msgid "Recent Analyses"
+msgstr "Последние анализы"
+
+msgid "View All"
+msgstr "Посмотреть все"
+
+msgid "Powered by DeepSeek AI via OpenRouter"
+msgstr "Работает на DeepSeek AI через OpenRouter"
+
+msgid "Please enter at least 30 characters."
+msgstr "Пожалуйста, введите не менее 30 символов."
+
+msgid "Something went wrong. Please try again."
+msgstr "Что-то пошло не так. Пожалуйста, попробуйте снова."
+
+msgid "Network error. Please try again."
+msgstr "Ошибка сети. Пожалуйста, попробуйте снова."
+
+msgid "Welcome back, %(username)s!"
+msgstr "Добро пожаловать, %(username)s!"
+
+msgid "Analysis Report — FakeNews AI"
+msgstr "Отчёт об анализе — FakeNews AI"
+
+msgid "History — FakeNews AI"
+msgstr "История — FakeNews AI"
+
+msgid "Analyze News — FakeNews AI"
+msgstr "Анализ новостей — FakeNews AI"
+
+msgid "Profile — FakeNews AI"
+msgstr "Профиль — FakeNews AI"
+
+msgid "Login — FakeNews AI"
+msgstr "Вход — FakeNews AI"
+
+msgid "Register — FakeNews AI"
+msgstr "Регистрация — FakeNews AI"
+
+msgid "About — FakeNews AI"
+msgstr "О нас — FakeNews AI"

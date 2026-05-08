@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "Register — FakeNews AI" %}{% endblock %}
+
+{% block content %}
+<div class="auth-wrapper" style="min-height:calc(100vh - 70px);">
+  <div class="auth-card" style="max-width:480px;">
+
+    <div class="auth-logo">
+      <div style="font-size:2.5rem;margin-bottom:.75rem;">
+        <i class="fas fa-user-plus" style="background:linear-gradient(135deg,#818cf8,#06b6d4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;"></i>
+      </div>
+      <h2>{% trans "Create Account" %}</h2>
+      <p>{% trans "Start detecting fake news for free" %}</p>
+    </div>
+
+    <form method="post">
+      {% csrf_token %}
+
+      <div class="row g-3">
+        <div class="col-12">
+          <div class="input-group">
+            <span class="input-group-text"><i class="fas fa-user"></i></span>
+            {{ form.username }}
+          </div>
+          {% if form.username.errors %}
+            <div class="text-danger mt-1" style="font-size:.82rem;">{{ form.username.errors.0 }}</div>
+          {% endif %}
+        </div>
+
+        <div class="col-12">
+          <div class="input-group">
+            <span class="input-group-text"><i class="fas fa-signature"></i></span>
+            {{ form.first_name }}
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="input-group">
+            <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+            {{ form.email }}
+          </div>
+          {% if form.email.errors %}
+            <div class="text-danger mt-1" style="font-size:.82rem;">{{ form.email.errors.0 }}</div>
+          {% endif %}
+        </div>
+
+        <div class="col-12">
+          <div class="input-group">
+            <span class="input-group-text"><i class="fas fa-lock"></i></span>
+            {{ form.password1 }}
+          </div>
+          {% if form.password1.errors %}
+            <div class="text-danger mt-1" style="font-size:.82rem;">{{ form.password1.errors.0 }}</div>
+          {% endif %}
+        </div>
+
+        <div class="col-12">
+          <div class="input-group">
+            <span class="input-group-text"><i class="fas fa-lock"></i></span>
+            {{ form.password2 }}
+          </div>
+          {% if form.password2.errors %}
+            <div class="text-danger mt-1" style="font-size:.82rem;">{{ form.password2.errors.0 }}</div>
+          {% endif %}
+        </div>
+      </div>
+
+      {% if form.non_field_errors %}
+        <div class="alert alert-danger mt-3">
+          <i class="fas fa-exclamation-circle me-2"></i>{{ form.non_field_errors.0 }}
+        </div>
+      {% endif %}
+
+      <button type="submit" class="btn-primary-custom w-100 justify-content-center mt-3">
+        <i class="fas fa-rocket"></i> {% trans "Create Account" %}
+      </button>
+    </form>
+
+    <div class="form-divider">{% trans "or" %}</div>
+
+    <div class="text-center" style="color:var(--text-muted);font-size:.9rem;">
+      {% trans "Already have an account?" %}
+      <a href="{% url 'accounts:login' %}" style="color:var(--primary-light);font-weight:600;">
+        {% trans "Sign In" %}
+      </a>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,199 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "FakeNews AI — Detect Misinformation with AI" %}{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="container position-relative">
+    <div class="row align-items-center gy-5">
+
+      <div class="col-lg-7">
+        <div class="hero-badge">
+          <i class="fas fa-bolt" style="font-size:.75rem;"></i>
+          {% trans "AI-Powered Detection" %}
+        </div>
+
+        <h1>
+          {% trans "Detect" %} <span class="gradient-text">{% trans "Fake News" %}</span><br>
+          {% trans "with" %} <span class="gradient-text">
+            <span id="typing-text"
+              data-phrases="{% trans 'Artificial Intelligence' %}|{% trans 'DeepSeek AI' %}|{% trans 'Instant Analysis' %}">
+            </span><span style="border-right:3px solid var(--primary-light);animation:blink 1s step-end infinite;">&nbsp;</span>
+          </span>
+        </h1>
+
+        <p>
+          {% trans "Our AI analyzes news articles in seconds, detecting misinformation, evaluating credibility, and providing detailed reasoning — in English, Russian, and Uzbek." %}
+        </p>
+
+        <div class="hero-actions">
+          {% if user.is_authenticated %}
+            <a href="{% url 'detector:analyze' %}" class="btn-primary-custom">
+              <i class="fas fa-search"></i> {% trans "Analyze News" %}
+            </a>
+            <a href="{% url 'detector:history' %}" class="btn-outline-custom">
+              <i class="fas fa-history"></i> {% trans "My History" %}
+            </a>
+          {% else %}
+            <a href="{% url 'accounts:register' %}" class="btn-primary-custom">
+              <i class="fas fa-rocket"></i> {% trans "Get Started Free" %}
+            </a>
+            <a href="{% url 'accounts:login' %}" class="btn-outline-custom">
+              <i class="fas fa-sign-in-alt"></i> {% trans "Login" %}
+            </a>
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="col-lg-5 hero-visual">
+        <div class="floating-card">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <div style="width:44px;height:44px;border-radius:12px;background:rgba(239,68,68,0.15);display:flex;align-items:center;justify-content:center;color:#f87171;font-size:1.25rem;">
+              <i class="fas fa-times-circle"></i>
+            </div>
+            <div>
+              <div style="font-weight:700;font-size:.8rem;color:#f87171;text-transform:uppercase;letter-spacing:1px;">{% trans "Fake News Detected" %}</div>
+              <div style="font-size:.85rem;color:var(--text-muted);">{% trans "Confidence: 98%" %}</div>
+            </div>
+            <div class="ms-auto" style="font-size:.75rem;color:var(--text-muted);">2s</div>
+          </div>
+          <div style="font-size:.85rem;color:var(--text-secondary);line-height:1.6;background:rgba(15,23,42,0.5);padding:.75rem;border-radius:8px;">
+            "{% trans "Scientists shocked by discovery..." %}"
+          </div>
+          <div class="mt-3">
+            <div style="display:flex;justify-content:space-between;font-size:.8rem;color:var(--text-muted);margin-bottom:.4rem;">
+              <span>{% trans "Confidence" %}</span><span style="color:#f87171;">98%</span>
+            </div>
+            <div style="height:6px;background:var(--bg-dark);border-radius:3px;overflow:hidden;">
+              <div style="height:100%;width:98%;background:linear-gradient(90deg,#ef4444,#f87171);border-radius:3px;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Global Stats -->
+<section class="py-5" style="background:var(--bg-card);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+  <div class="container">
+    <div class="row g-4 text-center">
+      <div class="col-6 col-md-3">
+        <div class="stat-number gradient-text count-up" data-target="{{ global_stats.total }}">0</div>
+        <div class="stat-label">{% trans "Total Analyses" %}</div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-number" style="color:#f87171;" class="count-up" data-target="{{ global_stats.fake }}">{{ global_stats.fake }}</div>
+        <div class="stat-label">{% trans "Fake Detected" %}</div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-number" style="color:#34d399;">{{ global_stats.real }}</div>
+        <div class="stat-label">{% trans "Real News" %}</div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-number" style="color:var(--primary-light);">3</div>
+        <div class="stat-label">{% trans "Languages" %}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- User Stats (if logged in) -->
+{% if user.is_authenticated and stats.total > 0 %}
+<section class="py-5">
+  <div class="container">
+    <h2 class="section-title">{% trans "Your Statistics" %}</h2>
+    <p class="section-sub">{% trans "Your personal news analysis overview" %}</p>
+    <div class="row g-4">
+      <div class="col-6 col-md-3">
+        <div class="stat-card stat-total">
+          <div class="stat-number gradient-text">{{ stats.total }}</div>
+          <div class="stat-label">{% trans "Analyses" %}</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-card stat-fake">
+          <div class="stat-number" style="color:#f87171;">{{ stats.fake }}</div>
+          <div class="stat-label">{% trans "Fake" %}</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-card stat-real">
+          <div class="stat-number" style="color:#34d399;">{{ stats.real }}</div>
+          <div class="stat-label">{% trans "Real" %}</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-card stat-uncertain">
+          <div class="stat-number" style="color:#fbbf24;">{{ stats.uncertain }}</div>
+          <div class="stat-label">{% trans "Uncertain" %}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<!-- Features Section -->
+<section class="py-5 {% if user.is_authenticated and stats.total > 0 %}{% else %}mt-3{% endif %}">
+  <div class="container">
+    <h2 class="section-title reveal">{% trans "How It Works" %}</h2>
+    <p class="section-sub reveal">{% trans "Advanced AI technology to fight misinformation" %}</p>
+    <div class="row g-4">
+      <div class="col-md-4 reveal animate-delay-1">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-paste"></i></div>
+          <h3>{% trans "1. Paste the News" %}</h3>
+          <p>{% trans "Copy any news article, social media post, or suspicious text and paste it into our analyzer." %}</p>
+        </div>
+      </div>
+      <div class="col-md-4 reveal animate-delay-2">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-brain"></i></div>
+          <h3>{% trans "2. AI Analysis" %}</h3>
+          <p>{% trans "Our DeepSeek AI model analyzes language patterns, logical consistency, and known misinformation signals." %}</p>
+        </div>
+      </div>
+      <div class="col-md-4 reveal animate-delay-3">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-chart-bar"></i></div>
+          <h3>{% trans "3. Get Results" %}</h3>
+          <p>{% trans "Receive a clear verdict (Real / Fake / Uncertain) with a confidence score and detailed reasoning." %}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+{% if not user.is_authenticated %}
+<section class="py-5 mb-3">
+  <div class="container">
+    <div class="glass-card text-center reveal" style="background:linear-gradient(135deg,rgba(79,70,229,0.12),rgba(6,182,212,0.08));border-color:rgba(79,70,229,0.25);">
+      <i class="fas fa-shield-alt" style="font-size:3rem;color:var(--primary-light);margin-bottom:1.25rem;display:block;"></i>
+      <h2 style="font-size:2rem;font-weight:800;margin-bottom:1rem;">{% trans "Ready to Fight Misinformation?" %}</h2>
+      <p style="color:var(--text-secondary);max-width:500px;margin:0 auto 2rem;">
+        {% trans "Create a free account and start detecting fake news with the power of AI." %}
+      </p>
+      <a href="{% url 'accounts:register' %}" class="btn-primary-custom" style="font-size:1.1rem;padding:.9rem 2.5rem;">
+        <i class="fas fa-rocket"></i> {% trans "Start For Free" %}
+      </a>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% endblock %}
+
+{% block extra_js %}
+<style>
+  .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .revealed { opacity: 1; transform: translateY(0); }
+  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+</style>
+{% endblock %}

@@ -1,0 +1,396 @@
+# Uzbek translations for FakeNews AI
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: uz\n"
+
+msgid "FakeNews AI Detector"
+msgstr "Soxta yangiliklar detektori AI"
+
+msgid "FakeNews AI — Detect Misinformation with AI"
+msgstr "FakeNews AI — Yolg'on axborotni AI yordamida aniqlash"
+
+msgid "AI-powered fake news detection system"
+msgstr "AI asosidagi soxta yangiliklar aniqlash tizimi"
+
+msgid "FakeNews AI"
+msgstr "FakeNews AI"
+
+msgid "Home"
+msgstr "Bosh sahifa"
+
+msgid "Analyze"
+msgstr "Tahlil"
+
+msgid "History"
+msgstr "Tarix"
+
+msgid "About"
+msgstr "Haqida"
+
+msgid "Profile"
+msgstr "Profil"
+
+msgid "Admin"
+msgstr "Admin"
+
+msgid "Logout"
+msgstr "Chiqish"
+
+msgid "Login"
+msgstr "Kirish"
+
+msgid "Sign Up"
+msgstr "Ro'yxatdan o'tish"
+
+msgid "English"
+msgstr "Inglizcha"
+
+msgid "Russian"
+msgstr "Ruscha"
+
+msgid "Uzbek"
+msgstr "O'zbekcha"
+
+msgid "Detect"
+msgstr "Aniqla"
+
+msgid "Fake News"
+msgstr "Soxta yangiliklar"
+
+msgid "with"
+msgstr "yordamida"
+
+msgid "Artificial Intelligence"
+msgstr "Sun'iy intellekt"
+
+msgid "DeepSeek AI"
+msgstr "DeepSeek AI"
+
+msgid "Instant Analysis"
+msgstr "Tezkor tahlil"
+
+msgid "Our AI analyzes news articles in seconds, detecting misinformation, evaluating credibility, and providing detailed reasoning — in English, Russian, and Uzbek."
+msgstr "Bizning AI soniyalar ichida yangilik maqolalarini tahlil qiladi, dezinformatsiyani aniqlab, ishonchliligini baholab, ingliz, rus va o'zbek tillarida batafsil asoslar beradi."
+
+msgid "Analyze News"
+msgstr "Yangilikni tahlil qilish"
+
+msgid "My History"
+msgstr "Mening tarixim"
+
+msgid "Get Started Free"
+msgstr "Bepul boshlash"
+
+msgid "Fake News Detected"
+msgstr "Soxta yangilik aniqlandi"
+
+msgid "Confidence: 98%"
+msgstr "Ishonch: 98%"
+
+msgid "Scientists shocked by discovery..."
+msgstr "Olimlar kashfiyotdan hayratda..."
+
+msgid "Confidence"
+msgstr "Ishonch"
+
+msgid "Total Analyses"
+msgstr "Jami tahlillar"
+
+msgid "Fake Detected"
+msgstr "Soxta aniqlandi"
+
+msgid "Real News"
+msgstr "Haqiqiy yangilik"
+
+msgid "Languages"
+msgstr "Tillar"
+
+msgid "Your Statistics"
+msgstr "Sizning statistikangiz"
+
+msgid "Your personal news analysis overview"
+msgstr "Shaxsiy yangiliklar tahlili xulosasi"
+
+msgid "Analyses"
+msgstr "Tahlillar"
+
+msgid "Fake"
+msgstr "Soxta"
+
+msgid "Real"
+msgstr "Haqiqiy"
+
+msgid "Uncertain"
+msgstr "Noaniq"
+
+msgid "How It Works"
+msgstr "Qanday ishlaydi"
+
+msgid "Advanced AI technology to fight misinformation"
+msgstr "Dezinformatsiyaga qarshi kurashish uchun ilg'or AI texnologiyasi"
+
+msgid "1. Paste the News"
+msgstr "1. Yangilikni joylashtiring"
+
+msgid "Copy any news article, social media post, or suspicious text and paste it into our analyzer."
+msgstr "Istalgan yangilik maqolasi, ijtimoiy tarmoq yozuvi yoki shubhali matnni nusxalab, tahlilchimizga joylashtiring."
+
+msgid "2. AI Analysis"
+msgstr "2. AI tahlili"
+
+msgid "Our DeepSeek AI model analyzes language patterns, logical consistency, and known misinformation signals."
+msgstr "Bizning DeepSeek AI modelimiz til naqshlarini, mantiqiy izchillikni va ma'lum dezinformatsiya belgilarini tahlil qiladi."
+
+msgid "3. Get Results"
+msgstr "3. Natijalarni oling"
+
+msgid "Receive a clear verdict (Real / Fake / Uncertain) with a confidence score and detailed reasoning."
+msgstr "Ishonch ko'rsatkichi va batafsil asoslar bilan aniq hukm oling (Haqiqiy / Soxta / Noaniq)."
+
+msgid "Ready to Fight Misinformation?"
+msgstr "Dezinformatsiyaga qarshi kurashishga tayyormisiz?"
+
+msgid "Create a free account and start detecting fake news with the power of AI."
+msgstr "Bepul hisob yarating va AI kuchi bilan soxta yangiliklar aniqlashni boshlang."
+
+msgid "Start For Free"
+msgstr "Bepul boshlash"
+
+msgid "About FakeNews AI"
+msgstr "FakeNews AI haqida"
+
+msgid "An AI-powered system designed to help people identify misinformation and fake news in the digital age."
+msgstr "Raqamli asrda odamlarga dezinformatsiya va soxta yangiliklar aniqlashga yordam berish uchun yaratilgan AI tizimi."
+
+msgid "Our Mission"
+msgstr "Bizning vazifamiz"
+
+msgid "We believe accurate information is the foundation of a healthy society. Our mission is to make AI-powered fact-checking accessible to everyone, helping people make informed decisions about the news they consume and share."
+msgstr "Biz to'g'ri ma'lumot sog'lom jamiyatning asosi deb hisoblaymiz. Bizning vazifamiz AI asosidagi fakt tekshirishni hamma uchun ochiq qilish."
+
+msgid "Technology"
+msgstr "Texnologiya"
+
+msgid "Built on DeepSeek AI via OpenRouter, our system analyzes linguistic patterns, logical consistency, emotional manipulation tactics, and structural markers commonly found in fake news to provide accurate verdicts."
+msgstr "OpenRouter orqali DeepSeek AI asosida qurilgan tizimimiz til naqshlari, mantiqiy izchillik va hissiy manipulyatsiya taktikalarini tahlil qiladi."
+
+msgid "3 Languages"
+msgstr "3 til"
+
+msgid "English, Russian, and Uzbek support for wider accessibility."
+msgstr "Keng qamrovlilik uchun ingliz, rus va o'zbek tillarini qo'llab-quvvatlash."
+
+msgid "Fast Analysis"
+msgstr "Tezkor tahlil"
+
+msgid "Results in seconds using state-of-the-art language models."
+msgstr "Zamonaviy til modellari yordamida soniyalar ichida natijalar."
+
+msgid "Analysis History"
+msgstr "Tahlil tarixi"
+
+msgid "All your analyses are saved for future reference."
+msgstr "Barcha tahlillaringiz keyingi foydalanish uchun saqlanadi."
+
+msgid "Disclaimer"
+msgstr "Mas'uliyatsizlik"
+
+msgid "FakeNews AI is a tool to assist in evaluating news content. AI analysis should be used as a starting point for critical thinking, not as a definitive fact-checker. Always verify information through multiple credible sources."
+msgstr "FakeNews AI yangilik mazmunini baholashga yordam beruvchi vositadir. AI tahlili tanqidiy fikrlash uchun boshlang'ich nuqta sifatida ishlatilishi kerak. Ma'lumotlarni har doim bir nechta ishonchli manbalar orqali tasdiqlang."
+
+msgid "Welcome Back"
+msgstr "Qaytib kelganingiz bilan"
+
+msgid "Sign in to your account to continue"
+msgstr "Davom etish uchun hisobingizga kiring"
+
+msgid "Sign In"
+msgstr "Kirish"
+
+msgid "Don't have an account?"
+msgstr "Hisobingiz yo'qmi?"
+
+msgid "Create Account"
+msgstr "Hisob yaratish"
+
+msgid "Start detecting fake news for free"
+msgstr "Soxta yangiliklar aniqlashni bepul boshlang"
+
+msgid "Already have an account?"
+msgstr "Hisobingiz bormi?"
+
+msgid "Username"
+msgstr "Foydalanuvchi nomi"
+
+msgid "Email address"
+msgstr "Email manzil"
+
+msgid "First name"
+msgstr "Ism"
+
+msgid "Password"
+msgstr "Parol"
+
+msgid "Confirm password"
+msgstr "Parolni tasdiqlang"
+
+msgid "Account created successfully! Welcome aboard."
+msgstr "Hisob muvaffaqiyatli yaratildi! Xush kelibsiz."
+
+msgid "Please correct the errors below."
+msgstr "Iltimos, quyidagi xatolarni tuzating."
+
+msgid "Invalid username or password."
+msgstr "Noto'g'ri foydalanuvchi nomi yoki parol."
+
+msgid "You have been logged out."
+msgstr "Siz tizimdan chiqdingiz."
+
+msgid "AI Analysis"
+msgstr "AI tahlili"
+
+msgid "Analyze News Article"
+msgstr "Yangilik maqolasini tahlil qilish"
+
+msgid "Paste any news text below and our AI will evaluate its credibility"
+msgstr "Quyida istalgan yangilik matnini joylashtiring, AI uning ishonchliligini baholaydi"
+
+msgid "Analyzing content..."
+msgstr "Kontent tahlil qilinmoqda..."
+
+msgid "Checking for patterns..."
+msgstr "Naqshlar tekshirilmoqda..."
+
+msgid "Consulting AI..."
+msgstr "AI bilan maslahat..."
+
+msgid "Evaluating credibility..."
+msgstr "Ishonchlilik baholanmoqda..."
+
+msgid "Generating verdict..."
+msgstr "Hukm tayyorlanmoqda..."
+
+msgid "AI is scanning for misinformation signals"
+msgstr "AI dezinformatsiya signallarini skanerlayapti"
+
+msgid "Paste the news article or text here to analyze..."
+msgstr "Tahlil qilish uchun yangilik maqolasi yoki matnni bu yerga joylashtiring..."
+
+msgid "Min 30 characters, max 5000"
+msgstr "Minimal 30 ta belgi, maksimal 5000"
+
+msgid "VERDICT"
+msgstr "HUKM"
+
+msgid "FAKE NEWS"
+msgstr "SOXTA YANGILIK"
+
+msgid "REAL NEWS"
+msgstr "HAQIQIY YANGILIK"
+
+msgid "UNCERTAIN"
+msgstr "NOANIQ"
+
+msgid "AI Reasoning"
+msgstr "AI asoslari"
+
+msgid "Full Report"
+msgstr "To'liq hisobot"
+
+msgid "New Analysis"
+msgstr "Yangi tahlil"
+
+msgid "Recent"
+msgstr "So'nggi"
+
+msgid "View full history"
+msgstr "To'liq tarixni ko'rish"
+
+msgid "total analyses"
+msgstr "jami tahlil"
+
+msgid "All"
+msgstr "Barchasi"
+
+msgid "No analyses yet"
+msgstr "Hali tahlil yo'q"
+
+msgid "Start by analyzing your first news article."
+msgstr "Birinchi yangilik maqolangizni tahlil qilishdan boshlang."
+
+msgid "Analyze Now"
+msgstr "Hozir tahlil qiling"
+
+msgid "You haven't analyzed any news yet. Start by analyzing your first article."
+msgstr "Siz hali birorta ham yangiliklarni tahlil qilmadingiz. Birinchi maqolangizdan boshlang."
+
+msgid "Analysis Report"
+msgstr "Tahlil hisoboti"
+
+msgid "Back to History"
+msgstr "Tarixga qaytish"
+
+msgid "Analysis Details"
+msgstr "Tahlil tafsilotlari"
+
+msgid "Date"
+msgstr "Sana"
+
+msgid "Language"
+msgstr "Til"
+
+msgid "Text Length"
+msgstr "Matn uzunligi"
+
+msgid "chars"
+msgstr "belgi"
+
+msgid "Processing Time"
+msgstr "Ishlov berish vaqti"
+
+msgid "Analyzed Text"
+msgstr "Tahlil qilingan matn"
+
+msgid "Recent Analyses"
+msgstr "So'nggi tahlillar"
+
+msgid "View All"
+msgstr "Barchasini ko'rish"
+
+msgid "Powered by DeepSeek AI via OpenRouter"
+msgstr "OpenRouter orqali DeepSeek AI tomonidan ishlay oladi"
+
+msgid "Please enter at least 30 characters."
+msgstr "Iltimos, kamida 30 ta belgi kiriting."
+
+msgid "Something went wrong. Please try again."
+msgstr "Nimadir noto'g'ri ketdi. Iltimos, qayta urinib ko'ring."
+
+msgid "Network error. Please try again."
+msgstr "Tarmoq xatosi. Iltimos, qayta urinib ko'ring."
+
+msgid "Welcome back, %(username)s!"
+msgstr "Qaytib kelganingiz bilan, %(username)s!"
+
+msgid "Analysis Report — FakeNews AI"
+msgstr "Tahlil hisoboti — FakeNews AI"
+
+msgid "History — FakeNews AI"
+msgstr "Tarix — FakeNews AI"
+
+msgid "Analyze News — FakeNews AI"
+msgstr "Yangilik tahlili — FakeNews AI"
+
+msgid "Profile — FakeNews AI"
+msgstr "Profil — FakeNews AI"
+
+msgid "Login — FakeNews AI"
+msgstr "Kirish — FakeNews AI"
+
+msgid "Register — FakeNews AI"
+msgstr "Ro'yxatdan o'tish — FakeNews AI"
+
+msgid "About — FakeNews AI"
+msgstr "Haqida — FakeNews AI"

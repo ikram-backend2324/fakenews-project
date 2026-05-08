@@ -1,0 +1,157 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "Analyze News — FakeNews AI" %}{% endblock %}
+
+{% block content %}
+
+<!-- Loading Overlay -->
+<div id="loadingOverlay" class="loading-overlay"
+     data-messages="{% trans 'Analyzing content...' %}|{% trans 'Checking for patterns...' %}|{% trans 'Consulting AI...' %}|{% trans 'Evaluating credibility...' %}|{% trans 'Generating verdict...' %}">
+  <div class="loading-content">
+    <div class="radar-container">
+      <div class="radar-circle"></div>
+      <div class="radar-circle"></div>
+      <div class="radar-circle"></div>
+      <div class="radar-circle"></div>
+      <div class="radar-core"></div>
+    </div>
+    <div class="loading-text">{% trans "Analyzing content..." %}</div>
+    <div class="loading-sub">
+      {% trans "AI is scanning for misinformation signals" %}
+      <div class="loading-dots mt-2">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Page Header -->
+<div class="detect-header">
+  <div class="container">
+    <div class="hero-badge d-inline-flex mx-auto mb-3">
+      <i class="fas fa-brain me-2"></i> {% trans "AI Analysis" %}
+    </div>
+    <h1>{% trans "Analyze News Article" %}</h1>
+    <p>{% trans "Paste any news text below and our AI will evaluate its credibility" %}</p>
+  </div>
+</div>
+
+<div class="container pb-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+
+      <!-- Analysis Form -->
+      <div class="glass-card mb-4">
+        <form id="analyzeForm"
+              data-url="{% url 'detector:run_analysis' %}">
+          {% csrf_token %}
+          <div class="form-group mb-1">
+            {{ form.news_text }}
+          </div>
+          <div id="charCounter" class="char-counter">0 / 5000</div>
+
+          {% if form.news_text.errors %}
+            <div class="alert alert-danger mt-2">{{ form.news_text.errors.0 }}</div>
+          {% endif %}
+
+          <div class="d-flex justify-content-between align-items-center mt-3">
+            <div style="color:var(--text-muted);font-size:.85rem;">
+              <i class="fas fa-info-circle me-1"></i>
+              {% trans "Min 30 characters, max 5000" %}
+            </div>
+            <button type="submit" class="btn-primary-custom" id="submitBtn">
+              <i class="fas fa-search"></i> {% trans "Analyze" %}
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Result Section -->
+      <div id="resultSection" class="result-section mb-4">
+        <div class="verdict-card verdict-uncertain">
+          <div class="d-flex align-items-start gap-3">
+            <div class="verdict-icon-wrap">
+              <i class="fas fa-question-circle"></i>
+            </div>
+            <div class="flex-grow-1">
+              <div class="verdict-label">{% trans "VERDICT" %}</div>
+              <div class="verdict-title">---</div>
+            </div>
+          </div>
+
+          <div class="confidence-bar-wrap">
+            <div class="confidence-label">
+              <span>{% trans "Confidence" %}</span>
+              <span class="confidence-pct">0%</span>
+            </div>
+            <div class="confidence-track">
+              <div class="confidence-fill"></div>
+            </div>
+          </div>
+
+          <div class="reasoning-box">
+            <div style="font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--text-muted);margin-bottom:.5rem;">
+              <i class="fas fa-comment-alt me-1"></i> {% trans "AI Reasoning" %}
+            </div>
+            <div class="reasoning-text"></div>
+          </div>
+
+          <div class="d-flex gap-2 mt-3">
+            <a href="#" class="detail-link btn-outline-custom"
+               data-base="{% url 'detector:detail' 999 %}"
+               style="padding:.5rem 1.25rem;font-size:.85rem;display:none;">
+              <i class="fas fa-external-link-alt me-1"></i> {% trans "Full Report" %}
+            </a>
+            <button onclick="document.getElementById('newsText').value='';document.getElementById('resultSection').classList.remove('show');document.getElementById('newsText').focus();"
+                    class="btn-outline-custom" style="padding:.5rem 1.25rem;font-size:.85rem;">
+              <i class="fas fa-redo me-1"></i> {% trans "New Analysis" %}
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recent Analyses -->
+      {% if recent_analyses %}
+      <div class="glass-card">
+        <h5 style="font-weight:700;margin-bottom:1rem;">
+          <i class="fas fa-clock me-2" style="color:var(--primary-light);"></i>
+          {% trans "Recent" %}
+        </h5>
+        {% for analysis in recent_analyses %}
+        <a href="{% url 'detector:detail' analysis.pk %}" class="history-item" style="text-decoration:none;color:inherit;">
+          <div class="history-verdict-badge badge-{{ analysis.verdict }}">
+            {{ analysis.get_verdict_display }}
+          </div>
+          <div class="history-text">{{ analysis.news_text|truncatechars:70 }}</div>
+          <div class="history-meta">{{ analysis.confidence }}%</div>
+        </a>
+        {% endfor %}
+        <div class="text-center mt-3">
+          <a href="{% url 'detector:history' %}" style="color:var(--primary-light);font-size:.85rem;">
+            {% trans "View full history" %} <i class="fas fa-arrow-right ms-1"></i>
+          </a>
+        </div>
+      </div>
+      {% endif %}
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block extra_js %}
+<script>
+  // Pass translated strings to JS
+  window._t = {
+    fake: "{% trans 'FAKE NEWS' %}",
+    real: "{% trans 'REAL NEWS' %}",
+    uncertain: "{% trans 'UNCERTAIN' %}",
+    verdict: "{% trans 'VERDICT' %}",
+    minLen: "{% trans 'Please enter at least 30 characters.' %}",
+    error: "{% trans 'Something went wrong. Please try again.' %}",
+    networkError: "{% trans 'Network error. Please try again.' %}",
+  };
+</script>
+{% endblock %}
